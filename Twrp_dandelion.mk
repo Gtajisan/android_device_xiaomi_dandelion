@@ -8,14 +8,14 @@
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common Omni stuff.
-$(call inherit-product, vendor/omni/config/common.mk)
+# Inherit some common twrp stuff.
+$(call inherit-product, vendor/twrp/config/common.mk)
 
 # Inherit from dandelion device
 $(call inherit-product, device/xiaomi/dandelion/device.mk)
 
 PRODUCT_DEVICE := dandelion
-PRODUCT_NAME := omni_dandelion
+PRODUCT_NAME := twrp_dandelion
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := 220233L2G
 PRODUCT_MANUFACTURER := xiaomi
